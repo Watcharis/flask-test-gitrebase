@@ -15,6 +15,9 @@ def getEcho():
 def getMiss():
     return handle2.miss()
 
+@app.route("/echo", methods=["GET"])
+def getWriteEcho():
+    return handle3.writeEcho()
 
 if __name__ == "__main__":
     app.run(host="localhost", port=5005)
