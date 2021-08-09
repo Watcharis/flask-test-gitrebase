@@ -1,18 +1,15 @@
 from flask import Flask, json, jsonify, request
-from handle import handle1
-
-
+from handle import handle1, handle2, handle3
 
 app =Flask(__name__)
-
-
 
 @app.route("/", methods=["GET"])
 def getHello():
     return handle1.hello()
 
-
-
+@app.route("/test", methods=["GET"])
+def getEcho():
+    return handle2.echo()
 
 
 if __name__ == "__main__":
