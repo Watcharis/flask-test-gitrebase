@@ -17,4 +17,4 @@ def getMiss():
 
 
 if __name__ == "__main__":
-    app.run(host="localhost", port=5006)
+    app.run(host="localhost", port=5005)
